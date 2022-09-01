@@ -1,0 +1,138 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    
+    box-sizing: border-box;
+} */
+
+.conatiner{
+    width: 80%;
+    height:80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.cards{
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.card{
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-image: url("https://images.unsplash.com/photo-1659976042773-08e394213554?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius:50px ;
+    box-shadow: 30px 30px 40px #141313,
+    -30px -30px 40px #1c1919;
+    transform: scale(1.85);
+    margin: 2rem;
+}
+
+
+.colour{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #fc9842;
+    background-image: linear-gradient(315deg,#fc9842 0%,#fe5f75 74%);
+
+    right: 120px;
+    top: 40px;
+    transform: rotate(-45deg) translate(-90px);
+
+}
+
+.colour::before{
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 40px;
+    background-color: #ff3c0e;
+    transform: translateX(-145px);
+}
+
+.colour-button{
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    background-color: #fc9842;
+    background-image: linear-gradient(115deg,#fc9842 0%,#fe5f75 74%);
+    left:140px;
+    top: 245px;
+    transform: rotate(45deg) translateY(95px);
+}
+.colour-button::before{
+    content: ' ';
+    position: absolute;
+    width:100%;
+    height: 100%;
+    bottom:40px;
+    background-color: #f9484a;
+    background-image: linear-gradient(315deg,#f9484a 0%,#fbd72b 74%);
+    transform:translateX(-147px);
+}
+
+.card-text{
+    opacity: 0;
+    position: relative;
+    top: 80px;
+    font-size: 120%;
+    
+}
+
+.card:hover{
+    border-radius: 50px;
+    background: linear-gradient(145deg,#e6e6ee,#ffffff);
+    box-shadow: 30px 30px 40px #141313,
+    -36px -30px 40px #1c1919;
+    animation: large .7s ease-in-out forwards;
+}
+
+@keyframes large{
+    100%{
+        transform: scale(.85);
+    }
+}
+
+.card:hover .card-txet{
+    opacity: 1;
+}
+
+.card:hover .colour{
+    animation: #ove .7s ease-in-out forwards;
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(-45deg) translateY(-85px);
+    }
+    100%{
+        transform: rotate(-45deg) translateY(0px)
+
+    }
+}
+
+.card:hover .colour-button{
+    animation: #ovel .7s ease-in-out forwards;
+}
+
+@keyframes #ovel{
+    0%{
+        transform:rotate(-45deg) translateY(90px);
+    }
+    100%{
+        transform:rotate(-45deg) translateY(0px);
+    }
+}

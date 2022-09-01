@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discovery</title>
+    <link rel="stylesheet" href="/css/discovery_page.css">
+</head>
+<body>
+    <section class="showcase">
+        <header>
+            <h2 class="logo">Space-X</h2>
+            <div class="toggle"></div>
+
+        </header>
+
+        <video src="/video/Pexels Videos 3867.mp4"  muted loop autoplay></video>
+        <div class="overlay"></div>
+        <div class="text">
+            <h2>Ultimate Theory</h2>
+            <h3>Of the Upper world</h3>
+            <p>Massive ocean hiding underneath the surface of Europa. An international joint-research team led by NASA
+            announced in 2019 that water vapor had been detected in the atmosphere of Europa,one of jupiter's 80 moons . This 
+            discovery supported the long-held theory that there is a,which many scientist believe to be a 15-mile(24-kilometer)
+            deep sheet of ice.
+            </p>
+
+            <a href="https://www.nasa.gov/">Explore</a>
+        </div>
+        <ul class="social">
+            <li><a href="https://www.facebook.com/NASA"><img src="/images/facebook111.png"  alt=""></a><li>
+            <li><a href="https://www.instagram.com/nasa/?hl=en"><img src="/images/instagram111.png" alt=""></a></li>
+            <li><a href="https://twitter.com/nasa/?lang=en"><img src="/images/twitter111.png" alt=""></a></li>
+        </ul>
+    </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="/html/Space_XFelxbox.html">Home</a></li>
+            <li><a href="#">News</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">Blog</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click',() =>{
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+
+
+        })
+           
+
+        
+    </script>
+    
+</body>
+</html>

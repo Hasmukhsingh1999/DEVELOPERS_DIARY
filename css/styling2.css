@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #333;
+    color:#fff;
+    line-height:1.6;
+    height: 100vh;
+    overflow: hidden;
+
+
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+
+
+
+}
+
+.nav-bar{
+    position: fixed;
+    top:0;
+    z-index:1;
+    display: flex;
+    width:100%;
+    height: 60px;
+    background: rgba(0,0,0,0.7);
+}
+
+.nav-bar ul{
+    display: flex;
+    list-style: none;
+    width:100%;
+    justify-content: center;
+}
+
+.nav-bar ul li{
+    margin: 0 1rem;
+    padding: 1rem;
+
+}
+
+.nav-bar ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #f4f4f4;
+
+}
+
+.nav-bar ul li a:hover{
+    color: skyblue;
+} 
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align:center;
+
+
+}
+
+section h1{
+    font-size: 4rem;;
+
+}
+
+section p{
+    font-size: 1.5rem;
+}
+
+section#home{
+    background: url(/images/hd1.jpg) no-repeat center center/cover;
+
+}
+
+section#about{
+    background: url(/images/hd2.jpg) no-repeat center center/cover;
+
+}
+
+/* section#bounty{
+    background: url(/images/bounty.jpg) no-repeat center center/cover
+
+} */
+section#watchanime{
+    background: url(/images/watchanime.jpg) no-repeat center center/cover
+
+}
+
+section#contact{
+    background: url(/images/shd.jpg) no-repeat center center/cover
+
+}
+.btn{
+    text-decoration: none;
+    padding: 8px 30px ;
+    border-radius:40px ;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5rem;
+
+}
+.btn1{
+    text-decoration: none;
+    padding: 8px 30px ;
+    border-radius:40px ;
+    background: #fff;
+    color: #2b1055;
+    font-size: 1.5rem;
+}
+
+#todo{
+    font-style: italic;
+}
